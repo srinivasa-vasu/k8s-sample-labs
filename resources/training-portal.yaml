@@ -1,0 +1,25 @@
+apiVersion: training.eduk8s.io/v1alpha1
+kind: TrainingPortal
+metadata:
+  name: spring-jpa-ybdb
+spec:
+  portal:
+    registration:
+      type: one-step
+      enabled: false
+    title: YB Cloud
+    credentials:
+      admin:
+        username: ybdb-user
+        password: ybdb-user
+      robot:
+        username: robot-user
+        password: top-secret  
+    sessions:
+      maximum: 3
+  workshops:
+  - name: spring-jpa-ybdb
+    capacity: 3
+    # reserved: 1
+    expires: 1h
+    orphaned: 5m

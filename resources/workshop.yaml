@@ -1,0 +1,35 @@
+apiVersion: training.eduk8s.io/v1alpha2
+kind: Workshop
+metadata:
+  name: spring-jpa-ybdb
+spec:
+  title: Spring Boot JPA with YugabyteDB
+  description: Spring Boot JPA (blocking API) integration with YugabyteDB
+  url: https://github.com/srinivasa-vasu/springboot-jpa
+  vendor: yugabytedb.com
+  authors:
+  - ybdb
+  difficulty: intermediate
+  duration: 1h
+  tags:
+  - spring-boot
+  - jpa
+  - yugabytedb
+  content:
+    image: local/spring-jpa-ybdb:v1.0
+    # files: github.com/eduk8s-tests/lab-spring-testing
+  session:
+    namespaces:
+      budget: medium
+    applications:
+      terminal:
+        enabled: true
+        layout: split
+      console:
+        enabled: true
+        vendor: octant
+      editor:
+        enabled: true
+    dashboards:
+    - name: Video
+      url: https://www.youtube.com/embed/4IMwLcddBEU        

@@ -1,0 +1,15 @@
+name: Spring Boot JPA Integration
+
+modules:
+    activate:
+    - index
+    - exercises/01-create-ybdb-cluster
+    - exercises/02-test-cluster-access
+    - exercises/03-initialize-database
+    - exercises/04-initialize-bootapp
+    - exercises/05-create-entity-data-layer
+    - exercises/06-create-service-layer
+    - exercises/07-create-routing-layer
+    - exercises/08-link-db
+    - exercises/09-build-and-test
+    - finish

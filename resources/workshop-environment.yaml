@@ -1,0 +1,13 @@
+apiVersion: training.eduk8s.io/v1alpha1
+kind: WorkshopEnvironment
+metadata:
+  name: spring-jpa-ybdb-01
+spec:
+  workshop:
+    name: spring-jpa-ybdb
+  request:
+    enabled: true
+    token: spring-jpa-ybdb
+  session:
+    username: ybdb-user
+    password: ybdb-user

@@ -1,0 +1,8 @@
+apiVersion: training.eduk8s.io/v1alpha1
+kind: WorkshopRequest
+metadata:
+  name: spring-jpa-ybdb-01
+spec:
+  environment:
+    name: spring-jpa-ybdb-01
+    token: spring-jpa-ybdb
